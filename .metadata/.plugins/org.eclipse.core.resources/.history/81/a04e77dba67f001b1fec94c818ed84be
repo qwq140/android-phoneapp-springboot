@@ -1,0 +1,19 @@
+package com.cos.phoneapp.web;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cos.phoneapp.domain.PhoneRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@RestController
+public class PhoneController {
+	private PhoneRepository phoneRepository;
+	
+	@GetMapping("/phone")
+	public void findAll() {
+		
+	}
+}
