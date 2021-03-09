@@ -23,12 +23,10 @@ public class PhoneAdapter extends RecyclerView.Adapter<PhoneAdapter.PhoneViewHol
 
     private static final String TAG = "PhoneAdapter";
     private List<Phone> phones;
-    private PhoneService phoneService;
     private MainActivity mainActivity;
 
-    public PhoneAdapter(List<Phone> phones, PhoneService phoneService, MainActivity mainActivity) {
+    public PhoneAdapter(List<Phone> phones, MainActivity mainActivity) {
         this.phones = phones;
-        this.phoneService = phoneService;
         this.mainActivity = mainActivity;
     }
 

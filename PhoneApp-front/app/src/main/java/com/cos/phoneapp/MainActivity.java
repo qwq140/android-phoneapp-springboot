@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                 phones = commonRespDto.getData();
                 // 어댑터에게 넘기기
                 Log.d(TAG, "onResponse: 응답 받은 데이터 : "+phones.toString());
-                phoneAdapter = new PhoneAdapter(phones,phoneService,MainActivity.this);
+                phoneAdapter = new PhoneAdapter(phones,MainActivity.this);
                 rvPhone.setAdapter(phoneAdapter);
             }
 
